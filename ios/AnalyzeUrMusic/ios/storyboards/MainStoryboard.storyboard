@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GNx-I4-H7b">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="jmr-s2-23z">
+            <objects>
+                <viewController id="GNx-I4-H7b" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qDb-B9-X5w"/>
+                        <viewControllerLayoutGuide type="bottom" id="87J-f2-cHy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r1a-Bb-fug">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cvq-3H-0bs">
+                                <rect key="frame" x="25" y="511" width="551" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtnClick:" destination="GNx-I4-H7b" eventType="touchUpInside" id="ysT-zK-t55"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZO-Zz-FG8">
+                                <rect key="frame" x="25" y="452" width="551" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Choose photos">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="retrieveFromPhotosBtnClick:" destination="GNx-I4-H7b" eventType="touchUpInside" id="dLO-a6-A1v"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAr-c6-Brh">
+                                <rect key="frame" x="28" y="20" width="544" height="413"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="26" y="0.0" width="348" height="442"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cvq-3H-0bs" firstAttribute="leading" secondItem="r1a-Bb-fug" secondAttribute="leadingMargin" constant="10" id="6Gm-QM-fTn"/>
+                            <constraint firstItem="Cvq-3H-0bs" firstAttribute="width" secondItem="wAr-c6-Brh" secondAttribute="height" multiplier="348:413" id="CMb-yk-yt1"/>
+                            <constraint firstAttribute="centerX" secondItem="Cvq-3H-0bs" secondAttribute="centerX" id="Chl-zy-HRm"/>
+                            <constraint firstAttribute="centerX" secondItem="KZO-Zz-FG8" secondAttribute="centerX" id="Ity-wa-yOP"/>
+                            <constraint firstItem="87J-f2-cHy" firstAttribute="top" secondItem="Cvq-3H-0bs" secondAttribute="bottom" constant="30" id="KZn-nB-C5J"/>
+                            <constraint firstItem="Cvq-3H-0bs" firstAttribute="top" secondItem="KZO-Zz-FG8" secondAttribute="bottom" constant="10" id="VKi-ng-N0N"/>
+                            <constraint firstAttribute="centerY" secondItem="wAr-c6-Brh" secondAttribute="bottom" constant="-120" id="WWv-9n-tqL"/>
+                            <constraint firstAttribute="centerX" secondItem="wAr-c6-Brh" secondAttribute="centerX" id="a1I-K8-ti3"/>
+                            <constraint firstItem="KZO-Zz-FG8" firstAttribute="leading" secondItem="r1a-Bb-fug" secondAttribute="leadingMargin" constant="20" id="j9G-lf-PE3"/>
+                            <constraint firstItem="Cvq-3H-0bs" firstAttribute="width" secondItem="KZO-Zz-FG8" secondAttribute="height" multiplier="348:49" id="ytk-Qb-xtR"/>
+                            <constraint firstItem="wAr-c6-Brh" firstAttribute="leading" secondItem="r1a-Bb-fug" secondAttribute="leadingMargin" constant="10" id="zwX-OU-AAJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WWv-9n-tqL"/>
+                                <exclude reference="zwX-OU-AAJ"/>
+                                <exclude reference="CMb-yk-yt1"/>
+                                <exclude reference="VKi-ng-N0N"/>
+                                <exclude reference="ytk-Qb-xtR"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="WWv-9n-tqL"/>
+                                <include reference="zwX-OU-AAJ"/>
+                                <include reference="CMb-yk-yt1"/>
+                                <include reference="VKi-ng-N0N"/>
+                                <include reference="ytk-Qb-xtR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="retrievedImg" destination="wAr-c6-Brh" id="OaJ-0H-20W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kai-Qb-FBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="222" y="274"/>
+        </scene>
+    </scenes>
+</document>

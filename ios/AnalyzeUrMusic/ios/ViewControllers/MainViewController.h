@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
+<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+
+@property UIImagePickerController* picker;
+
+@property (weak, nonatomic) IBOutlet UIImageView *retrievedImg;
+- (IBAction)retrieveFromPhotosBtnClick:(id)sender;
+- (IBAction)startBtnClick:(id)sender;
 
 @end

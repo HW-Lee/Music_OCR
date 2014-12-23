@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oyv-tY-yyh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="YpE-hP-h0C">
+            <objects>
+                <viewController id="oyv-tY-yyh" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gjd-lP-biF"/>
+                        <viewControllerLayoutGuide type="bottom" id="98z-Du-Pgw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2fy-1D-dvm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnalyzeUrMusic" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="heh-Ja-cVL">
+                                <rect key="frame" x="20" y="140" width="441" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2014年 HW Lee. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Krl-7g-ltE">
+                                <rect key="frame" x="20" y="439" width="441" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Krl-7g-ltE" secondAttribute="height" multiplier="442:21" id="de8-6R-YlO"/>
+                                    <constraint firstAttribute="width" constant="350" id="iPr-NK-Vwr"/>
+                                    <constraint firstAttribute="width" secondItem="Krl-7g-ltE" secondAttribute="height" multiplier="21:1" id="qkk-Ri-ipC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="de8-6R-YlO"/>
+                                        <exclude reference="iPr-NK-Vwr"/>
+                                        <exclude reference="qkk-Ri-ipC"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-21" y="533" width="442" height="21"/>
+                                    <mask key="constraints">
+                                        <exclude reference="de8-6R-YlO"/>
+                                        <exclude reference="iPr-NK-Vwr"/>
+                                        <exclude reference="qkk-Ri-ipC"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="heh-Ja-cVL" firstAttribute="top" secondItem="gjd-lP-biF" secondAttribute="bottom" constant="80" id="0RX-uW-XS1"/>
+                            <constraint firstItem="Krl-7g-ltE" firstAttribute="leading" secondItem="2fy-1D-dvm" secondAttribute="leadingMargin" constant="5" id="C1c-1g-ea9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="heh-Ja-cVL" secondAttribute="trailing" constant="50" id="JTE-eu-DKM"/>
+                            <constraint firstItem="heh-Ja-cVL" firstAttribute="leading" secondItem="2fy-1D-dvm" secondAttribute="leadingMargin" constant="50" id="eKX-uT-EPI"/>
+                            <constraint firstAttribute="centerX" secondItem="heh-Ja-cVL" secondAttribute="centerX" id="iDi-s6-op4"/>
+                            <constraint firstAttribute="centerX" secondItem="Krl-7g-ltE" secondAttribute="centerX" id="sWk-FT-SjL"/>
+                            <constraint firstItem="98z-Du-Pgw" firstAttribute="top" secondItem="Krl-7g-ltE" secondAttribute="bottom" constant="49" id="z3D-lc-hr9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="heh-Ja-cVL"/>
+                                <exclude reference="Krl-7g-ltE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0RX-uW-XS1"/>
+                                <exclude reference="JTE-eu-DKM"/>
+                                <exclude reference="eKX-uT-EPI"/>
+                                <exclude reference="iDi-s6-op4"/>
+                                <exclude reference="C1c-1g-ea9"/>
+                                <exclude reference="sWk-FT-SjL"/>
+                                <exclude reference="z3D-lc-hr9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="heh-Ja-cVL"/>
+                                <include reference="Krl-7g-ltE"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0RX-uW-XS1"/>
+                                <include reference="JTE-eu-DKM"/>
+                                <include reference="eKX-uT-EPI"/>
+                                <include reference="iDi-s6-op4"/>
+                                <include reference="C1c-1g-ea9"/>
+                                <include reference="sWk-FT-SjL"/>
+                                <include reference="z3D-lc-hr9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZV-1c-aAN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.5" y="-47"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,16 @@
+PODS:
+  - MBProgressHUD (0.8)
+  - OpenCV (2.4.9.1)
+  - SWRevealViewController (2.2.0)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - OpenCV
+  - SWRevealViewController
+
+SPEC CHECKSUMS:
+  MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  OpenCV: 4190ad68e79e1b9ae7ac53d749e96e8c05041e45
+  SWRevealViewController: 01120a17b7915206b79163c7c44cc64fcb0a6597
+
+COCOAPODS: 0.35.0

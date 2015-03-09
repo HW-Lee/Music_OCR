@@ -1,21 +1,21 @@
 # Xcode
 #
 build/
-ios/*.pbxuser
+*.pbxuser
 !default.pbxuser
-ios/*.mode1v3
+*.mode1v3
 !default.mode1v3
-ios/*.mode2v3
+*.mode2v3
 !default.mode2v3
-ios/*.perspectivev3
+*.perspectivev3
 !default.perspectivev3
 xcuserdata
-ios/*.xccheckout
-ios/*.moved-aside
+*.xccheckout
+*.moved-aside
 DerivedData
-ios/*.hmap
-ios/*.ipa
-ios/*.xcuserstate
+*.hmap
+*.ipa
+*.xcuserstate
 
 # CocoaPods
 #
@@ -27,3 +27,4 @@ ios/*.xcuserstate
 
 .DS_Store
 *~
+*.mat
